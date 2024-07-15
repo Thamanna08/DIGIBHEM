@@ -1,0 +1,13 @@
+print("**Welcome to BMI calculator**")
+weight=float(input("Enter your weight(in kilograms):"))
+height=float(input("Enter your height(in meters):"))
+BMI=float(weight/(height*height))
+print("BMI=",BMI)
+if(BMI<=18.4):
+    print("The person is Underweight")
+elif(BMI>18.5 and BMI<24.9):
+    print("The person is Normal")
+elif(BMI>25.0 and BMI<39.9):
+    print("The person is Overweight")
+else:
+    print("The person is Obese")
